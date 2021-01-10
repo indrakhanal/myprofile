@@ -1,0 +1,63 @@
+{% extends 'master.html' %}
+{%block 'title'%} projects {%endblock%}
+{%load static%}
+{%block 'content'%}
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+            <div class="banner_inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="home_left_img">
+								{%for item in info%}
+								<img style="width: 600px; height: 700px;" src="{{MEDIA_ROOT}}{{item.image.url}}" alt="">
+								{%endfor%}
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div style="margin-left: 150px;" class="banner_content">
+
+<!--								<a class="banner_btn" href="{%url 'project'%}">Discover Now</a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+
+        <!--================Projects Area =================-->
+        <section class="projects_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+					<h2>MY Recent Completed Projects</h2>
+					<p>currently i'am not working for any company these projects are my first learning project</p>
+				</div>
+        		<div class="projects_fillter">
+					<ul class="filter list">
+						<li class="active" data-filter="*"><a href="{%url 'project' %}">All Categories</a></li>
+						<li data-filter=".brand"><a href="{%url 'project' %}">Branding</a></li>
+						<li data-filter=".work"><a href="#">Creative Work </a></li>
+						<li data-filter=".web"><a href="#">Web Design</a></li>
+					</ul>
+				</div>
+
+				<div class="projects_inner row">
+					{%for item in p_info%}
+					<div class="col-lg-4 col-sm-6 brand web">
+						<div class="projects_item">
+							<img style="width: 430px; height: 400px" class="img-fluid" src="{{MEDIA_ROOT}}{{item.p_image.url}}" alt="">
+						</div>
+						<div class="projects_text">
+								<a href="#"><h4>{{item.p_name}}</h4></a>
+								<p>{{item.p_description}}</p>
+							</div>
+					</div>
+					<hr/>
+					{%endfor%}
+				</div>
+        	</div>
+        </section>
+        <!--================End Projects Area =================-->
+
+
+{%endblock%}

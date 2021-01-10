@@ -1,0 +1,212 @@
+{% extends 'master.html' %}
+{% block 'title'%} home page {%endblock%}
+{%load static%}
+{%block 'content'%}
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+            <div class="banner_inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="home_left_img">
+								{%for item in info%}
+								<img style="width: 600px; height: 700px;" src="{{MEDIA_ROOT}}{{item.image.url}}" alt="">
+								{%endfor%}
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div style="margin-left: 150px;" class="banner_content">
+								<h5>This is me</h5>
+								{% for item in info%}
+								<h2>{{item.name}}</h2>
+								<h4>{{item.about}}</h4>
+								{%endfor%}
+								<a class="banner_btn" href="{%url 'project'%}">My Complete Projects</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+<br/><br/>
+<hr/>
+        <!--================End Home Banner Area =================-->
+
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>About Myself</h4>
+							<style>
+								#more {display: none;}
+							</style>
+        					 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+								 dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><button onclick="myFunction()" id="myBtn">Read more</button><span id="more">
+									 erisque enim ligula venenatis dolor.
+									 Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+									 vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum
+									 dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
+									 vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+									 Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+
+
+							<br/>
+							<h5>The main choice of my life is to be success, i like to do these things which make me happy
+							and i dont care about the heater who always disappoint me,
+								who want to keep me down <i>middle finger</i> to the such person</h5>
+        					<div class="row">
+<!--        						<div class="col-md-4">-->
+<!--        							<div class="wel_item">-->
+<!--        								<i class="lnr lnr-database"></i>-->
+<!--        								<h4>$2.5M</h4>-->
+<!--        								<p>Total Donation</p>-->
+<!--        							</div>-->
+<!--        						</div>-->
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>10</h4>
+        								<p>Total Projects</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4>5</h4>
+        								<p>complete project</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="tools_expert">
+        					<h3>Tools Expertness</h3>
+							{%for item in tool%}
+        					<div class="skill_main">
+								<div class="skill_item">
+									<h4>{{item.t_name}} <span class="counter">{{item.t_percent}}</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="{{item.t_percent}}" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								{%endfor%}
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+
+
+
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>My Interest</h4>
+        					<p>My Interest in...</p>
+        					<div class="row">
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="far fa-laugh-wink"></i>
+        								<p>To Have Fun</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<p>To travel around the world</p>
+        							</div>
+        						</div>
+								<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="far fa-eye"></i>
+        								<p>Like to watch Movie</p>
+        							</div>
+        						</div>
+								<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="fad fa-books"></i>
+        								<p>Read Book</p>
+        							</div>
+        						</div>
+								<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="fas fa-house-night"></i>
+        								<p>To Pass time with my family</p>
+        							</div>
+        						</div>
+								<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="fas fa-head-side-headphones"></i>
+        								<p> To Listen Song </p>
+        							</div>
+        						</div>
+								<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="fas fa-trees"></i>
+        								<p> Specially want to enjoy with Nature </p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="tools_expert">
+        					<h3>Programming Skill and Other Skills</h3>
+							{% for item in skill%}
+        					<div class="tools">
+								<div class="list">
+									<p> <i class="fa fa-arrow-circle-right"></i> {{item.skill_title}}</p>
+								</div>
+								{%endfor%}
+							</div>
+							</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+<div style="margin-left: 700px" class="col">
+	<br/>
+	<br/>
+	<h2> Connect With Me </h2>
+	<p>Get In Touch with
+		Social Media
+	</p>
+
+	<ul class="list">
+		<li><a href="https://www.facebook.com/ikhanal12/">Facebook  <i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://twitter.com/indrakhanal291">Twitter <i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.instagram.com/indra_khanal01/">Instagram <i class="fa fa-instagram"></i></a></li>
+	</ul>
+</div>
+<br/>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+{%endblock%}
+
