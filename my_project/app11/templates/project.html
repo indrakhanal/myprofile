@@ -10,7 +10,7 @@
 						<div class="col-lg-6">
 							<div class="home_left_img">
 								{%for item in info%}
-								<img style="width: 600px; height: 700px;" src="{{MEDIA_ROOT}}{{item.image.url}}" alt="">
+								<img style="width: 800px; height: 800px;" src="{{MEDIA_ROOT}}{{item.image.url}}" alt="">
 								{%endfor%}
 							</div>
 						</div>
@@ -43,14 +43,15 @@
 
 				<div class="projects_inner row">
 					{%for item in p_info%}
-					<div class="col-lg-4 col-sm-6 brand web">
-						<div class="projects_item">
-							<img style="width: 430px; height: 400px" class="img-fluid" src="{{MEDIA_ROOT}}{{item.p_image.url}}" alt="">
-						</div>
+					<div class="col-lg-8 col-sm-6 brand web">
 						<div class="projects_text">
 								<a href="#"><h4>{{item.p_name}}</h4></a>
 								<p>{{item.p_description}}</p>
 							</div>
+						<div class="projects_item">
+							<img style="width: 800px; height: 500px" class="img-fluid" src="{{MEDIA_ROOT}}{{item.p_image.url}}" alt="">
+						</div>
+
 					</div>
 					<hr/>
 					{%endfor%}

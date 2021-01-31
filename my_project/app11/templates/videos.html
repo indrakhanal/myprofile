@@ -1,0 +1,35 @@
+{% extends 'master.html' %}
+{%block 'title'%} watch video {%endblock%}
+{%load static%}
+{%block 'content'%}
+ <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>Project Details</h2>
+						<div class="page_link">
+							<a href="{%url 'home'%}">Home</a>
+							<a href="#">Portfolio</a>
+							<a href="{%url 'video'%}">video</a>
+						</div>
+						<div class="text-danger">
+							<h1>ALL MY PROJECT SUMMARY VIDEO </h1>
+						</div>
+						<hr/>
+						<br/>
+						<div class="projects_text">
+							{% for video in videos %}
+							<a href="#"><h2>{{video.title}}</h2></a>
+            				<video width="800" height="800" controls >
+            				<source src="{{video.video.url}}" type="video/mp4">
+            				</video>
+            				{%endfor%}
+						</div>
+
+					</div>
+				</div>
+            </div>
+        </section>
+
+{%endblock%}

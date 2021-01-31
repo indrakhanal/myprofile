@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponse
-from .models import Person, Project, Gallery, Contact, Tolls, Skill
+from .models import Person, Project, Gallery, Contact, Tolls, Skill, Videos
 from django.contrib import messages
 
 
@@ -31,6 +31,15 @@ def gallery(request):
         'count': count
     }
     return render(request, 'gallery.html', context)
+
+
+def videos(request):
+    videos = Videos.objects.all()
+    context = {
+        'videos': videos,
+    }
+
+    return render(request, 'videos.html', context)
 
 
 def contact(request):

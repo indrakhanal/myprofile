@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ea671ad-3ac8-4ce4-b4c6-5b4727053356" name="Default Changelist" comment="" />
+    <list default="true" id="1ea671ad-3ac8-4ce4-b4c6-5b4727053356" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_project/app11/templates/videos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_project/media/profile/thyroid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/app11/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/app11/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/app11/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/app11/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/app11/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/app11/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/app11/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/app11/templates/master.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/app11/templates/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/app11/templates/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/app11/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/app11/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/app11/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/app11/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/db.sqlite3" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,17 +24,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZLitdaEWYtTkcGA3BgOOTigFnD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\my_profile\my_project\media\profile" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,10 +99,26 @@
       <workItem from="1608986366204" duration="4125000" />
       <workItem from="1609295249524" duration="1275000" />
       <workItem from="1609336589061" duration="3902000" />
+      <workItem from="1611804011249" duration="2772000" />
+      <workItem from="1612009232777" duration="9073000" />
+      <workItem from="1612057363099" duration="908000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
